@@ -1,98 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3914f54a-7f55-435b-882c-65bed7259c3d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/a.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_common_protos_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_util_3_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_xorlev_grpc_jersey_jersey_rpc_support_0_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_context_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_core_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_lite_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_stub_1_10_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_api_0_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_grpc_metrics_0_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b32.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_25_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_26.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/protodemo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/proto/test/test.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$MethodHandlers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoBaseDescriptorSupplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoBlockingStub.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoFileDescriptorSupplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoFutureStub.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoImplBase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoMethodDescriptorSupplier.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoStub.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoProtos$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoProtos.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/testRequest$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/testRequest$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/testRequest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/testRequestOrBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/test/test.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/test/grpc/ProtodemoGrpc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/test/grpc/ProtodemoProtos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/test/grpc/testRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/test/grpc/testRequestOrBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/578d202663c4a544e72d5c2e5bea68bf/google/api/annotations.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/578d202663c4a544e72d5c2e5bea68bf/google/api/http.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/578d202663c4a544e72d5c2e5bea68bf/google/rpc/code.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/578d202663c4a544e72d5c2e5bea68bf/google/rpc/error_details.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/578d202663c4a544e72d5c2e5bea68bf/google/rpc/status.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/578d202663c4a544e72d5c2e5bea68bf/grpcjersey/headers.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/any.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/api.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/compiler/plugin.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/descriptor.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/duration.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/empty.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/field_mask.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/source_context.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/struct.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/timestamp.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/type.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-dependencies/770a6611b413facbe7e994fa8dc67907/google/protobuf/wrappers.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-plugins/protoc-3.5.1-1-osx-x86_64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-plugins/protoc-gen-grpc-java-1.10.0-osx-x86_64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-plugins/protoc-gen-grpc-java-1.15.0-osx-x86_64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protoc-plugins/protoc-gen-jersey-0.3.2-osx-x86_64.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/protodemo-0.0.1-SNAPSHOT.jar" afterDir="false" />
-    </list>
+    <list default="true" id="3914f54a-7f55-435b-882c-65bed7259c3d" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -340,12 +249,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538031552366</updated>
-      <workItem from="1538031553831" duration="8142000" />
+      <workItem from="1538031553831" duration="8387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8142000" />
+    <option name="totallyTimeSpent" value="8387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="167" y="90" width="1440" height="877" extended-state="0" />
