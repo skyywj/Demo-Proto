@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+package test;
+
+// 错误码定义
+// 1-20   通用错误
+
+enum ErrorCode {
+        // 未定义错误
+        ERROR_UNDEFINED = 0;
+
+        // 服务器错误
+        // 这种情况是一些没有处理的到异常发生，或者一些 catch 到了，但是也不能做什么事情得异常(比如：数据库连接失败，网络闪断等等)
+        ERROR_SERVER_ERROR = 1;
+
+        // 系统维护中
+        // 显式的系统维护, 这种错误客户端不应该自动重试，并且提示用户稍后重试
+        ERROR_SYSTEM_MAINTENANCE = 2;
+
+        // 通用参数错误
+        //
+        // 这种参数错误一般是客户端异常，或者非法请求, 正常情况下(或者正常客户端)不应该出现
+        ERROR_INVALID_ARGUMENT = 3;
+
+        // 资源不存在
+        ERROR_NOT_FOUND = 4;
+
+        // 请求过于频繁
+        ERROR_TOO_MANY_REQUESTS = 5;
+
+        // 无权限
+        ERROR_PERMISSION_DENIED = 6;
+
+        // 未认证
+        ERROR_UNAUTHENTICATED = 7;
+
+
+        // 禁止注册
+        ERROR_FORBID_SIGNUP = 8;
+
+        // 连接超时
+        ERROR_TIME_OUT = 9;
+
+        // 数据重复
+        ERROR_DATA_REPEAT = 10;
+
+}

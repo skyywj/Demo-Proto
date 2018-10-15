@@ -4,13 +4,17 @@ com/test/grpc/ProtodemoGrpc$ProtodemoMethodDescriptorSupplier.class
 com/test/grpc/ProtodemoProtos$1.class
 com/test/grpc/ProtodemoProtos.class
 com/test/grpc/testRequest.class
+test/Common$ErrorCode$1.class
+test/Common$1.class
 com/test/grpc/ProtodemoGrpc$MethodHandlers.class
 com/test/grpc/ProtodemoGrpc$ProtodemoBlockingStub.class
 com/test/grpc/testRequest$1.class
+test/Common$ErrorCode.class
 com/test/grpc/ProtodemoGrpc$ProtodemoBaseDescriptorSupplier.class
 com/test/grpc/ProtodemoGrpc$ProtodemoFutureStub.class
 com/test/grpc/testRequest$Builder.class
 com/test/grpc/testRequestOrBuilder.class
+test/Common.class
 com/test/grpc/ProtodemoGrpc$ProtodemoStub.class
 com/test/grpc/ProtodemoGrpc$1.class
 com/test/grpc/ProtodemoGrpc.class
