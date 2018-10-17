@@ -2,8 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3914f54a-7f55-435b-882c-65bed7259c3d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/proto/test/common.proto" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/proto/test/test.proto" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/proto/test/test.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoBaseDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoFileDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoFileDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoMethodDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc$ProtodemoStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoProtos$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoProtos$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoProtos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/test/grpc/ProtodemoProtos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/test.proto" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/test.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/test/grpc/ProtodemoGrpc.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/test/grpc/ProtodemoGrpc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/test/grpc/ProtodemoProtos.java" beforeDir="false" afterPath="$PROJECT_DIR$/target/generated-sources/protobuf/java/com/test/grpc/ProtodemoProtos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/protodemo-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/protodemo-0.0.1-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,29 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.proto" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.proto" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/proto/test/test.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="20" selection-start-line="4" selection-end-line="5" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.proto" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/proto/test/common.proto">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+            <state relative-caret-position="435">
+              <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -72,9 +70,9 @@
       <list>
         <option value="$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/test/grpc/ProtodemoGrpc.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/proto/test/test.proto" />
         <option value="$PROJECT_DIR$/src/main/proto/test/common/proto.java" />
         <option value="$PROJECT_DIR$/src/main/proto/test/common.proto" />
+        <option value="$PROJECT_DIR$/src/main/proto/test/test.proto" />
       </list>
     </option>
   </component>
@@ -106,9 +104,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1920" />
-    <option name="height" value="1006" />
+    <option name="x" value="-1440" />
+    <option name="y" value="162" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,6 +115,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,9 +154,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,15 +235,17 @@
       <option name="presentableId" value="Default" />
       <updated>1538031552366</updated>
       <workItem from="1538031553831" duration="8387000" />
-      <workItem from="1539587737302" duration="693000" />
+      <workItem from="1539587737302" duration="1027000" />
+      <workItem from="1539693931537" duration="3791000" />
+      <workItem from="1539742505095" duration="1536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9080000" />
+    <option name="totallyTimeSpent" value="14741000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1008" extended-state="6" />
+    <frame x="-1440" y="162" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -258,10 +259,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3265766" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.47952443" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18849841" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34334764" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -282,10 +283,41 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.proto" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/proto/test/test.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/test/test.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" selection-start-line="4" selection-end-line="5" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/test/common.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
@@ -306,42 +338,20 @@
     <entry file="file://$PROJECT_DIR$/mvnw.cmd" />
     <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/java/com/test/grpc/ProtodemoProtos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/target/generated-sources/protobuf/grpc-java/com/test/grpc/ProtodemoGrpc.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="467">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/test/common/proto.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
+        <state relative-caret-position="521">
           <caret line="106" column="29" selection-start-line="106" selection-start-column="29" selection-end-line="106" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/proto/test/common/proto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/proto/test/test.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="20" selection-start-line="4" selection-end-line="5" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -349,6 +359,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/proto/test/test.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
         </state>
       </provider>
     </entry>

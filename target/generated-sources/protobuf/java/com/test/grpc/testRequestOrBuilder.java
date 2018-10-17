@@ -3,8 +3,8 @@
 
 package com.test.grpc;
 
-public interface testRequestOrBuilder extends
-    // @@protoc_insertion_point(interface_extends:test.testRequest)
+public interface TestRequestOrBuilder extends
+    // @@protoc_insertion_point(interface_extends:test.TestRequest)
     com.google.protobuf.MessageOrBuilder {
 
   /**

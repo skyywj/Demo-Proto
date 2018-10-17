@@ -29,32 +29,32 @@ public final class ProtodemoGrpc {
   // Static method descriptors that strictly reflect the proto.
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
   @java.lang.Deprecated // Use {@link #getTestMethod()} instead. 
-  public static final io.grpc.MethodDescriptor<com.test.grpc.testRequest,
+  public static final io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
       com.google.protobuf.Empty> METHOD_TEST = getTestMethodHelper();
 
-  private static volatile io.grpc.MethodDescriptor<com.test.grpc.testRequest,
+  private static volatile io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
       com.google.protobuf.Empty> getTestMethod;
 
   @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
-  public static io.grpc.MethodDescriptor<com.test.grpc.testRequest,
+  public static io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
       com.google.protobuf.Empty> getTestMethod() {
     return getTestMethodHelper();
   }
 
-  private static io.grpc.MethodDescriptor<com.test.grpc.testRequest,
+  private static io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
       com.google.protobuf.Empty> getTestMethodHelper() {
-    io.grpc.MethodDescriptor<com.test.grpc.testRequest, com.google.protobuf.Empty> getTestMethod;
+    io.grpc.MethodDescriptor<com.test.grpc.TestRequest, com.google.protobuf.Empty> getTestMethod;
     if ((getTestMethod = ProtodemoGrpc.getTestMethod) == null) {
       synchronized (ProtodemoGrpc.class) {
         if ((getTestMethod = ProtodemoGrpc.getTestMethod) == null) {
           ProtodemoGrpc.getTestMethod = getTestMethod = 
-              io.grpc.MethodDescriptor.<com.test.grpc.testRequest, com.google.protobuf.Empty>newBuilder()
+              io.grpc.MethodDescriptor.<com.test.grpc.TestRequest, com.google.protobuf.Empty>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "test.Protodemo", "test"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.test.grpc.testRequest.getDefaultInstance()))
+                  com.test.grpc.TestRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   com.google.protobuf.Empty.getDefaultInstance()))
                   .setSchemaDescriptor(new ProtodemoMethodDescriptorSupplier("test"))
@@ -63,6 +63,43 @@ public final class ProtodemoGrpc {
         }
      }
      return getTestMethod;
+  }
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  @java.lang.Deprecated // Use {@link #getTestHttpMethod()} instead. 
+  public static final io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
+      com.test.grpc.TestResponse> METHOD_TEST_HTTP = getTestHttpMethodHelper();
+
+  private static volatile io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
+      com.test.grpc.TestResponse> getTestHttpMethod;
+
+  @io.grpc.ExperimentalApi("https://github.com/grpc/grpc-java/issues/1901")
+  public static io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
+      com.test.grpc.TestResponse> getTestHttpMethod() {
+    return getTestHttpMethodHelper();
+  }
+
+  private static io.grpc.MethodDescriptor<com.test.grpc.TestRequest,
+      com.test.grpc.TestResponse> getTestHttpMethodHelper() {
+    io.grpc.MethodDescriptor<com.test.grpc.TestRequest, com.test.grpc.TestResponse> getTestHttpMethod;
+    if ((getTestHttpMethod = ProtodemoGrpc.getTestHttpMethod) == null) {
+      synchronized (ProtodemoGrpc.class) {
+        if ((getTestHttpMethod = ProtodemoGrpc.getTestHttpMethod) == null) {
+          ProtodemoGrpc.getTestHttpMethod = getTestHttpMethod = 
+              io.grpc.MethodDescriptor.<com.test.grpc.TestRequest, com.test.grpc.TestResponse>newBuilder()
+              .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
+              .setFullMethodName(generateFullMethodName(
+                  "test.Protodemo", "testHttp"))
+              .setSampledToLocalTracing(true)
+              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.test.grpc.TestRequest.getDefaultInstance()))
+              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
+                  com.test.grpc.TestResponse.getDefaultInstance()))
+                  .setSchemaDescriptor(new ProtodemoMethodDescriptorSupplier("testHttp"))
+                  .build();
+          }
+        }
+     }
+     return getTestHttpMethod;
   }
 
   /**
@@ -94,9 +131,16 @@ public final class ProtodemoGrpc {
 
     /**
      */
-    public void test(com.test.grpc.testRequest request,
+    public void test(com.test.grpc.TestRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getTestMethodHelper(), responseObserver);
+    }
+
+    /**
+     */
+    public void testHttp(com.test.grpc.TestRequest request,
+        io.grpc.stub.StreamObserver<com.test.grpc.TestResponse> responseObserver) {
+      asyncUnimplementedUnaryCall(getTestHttpMethodHelper(), responseObserver);
     }
 
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
@@ -105,9 +149,16 @@ public final class ProtodemoGrpc {
             getTestMethodHelper(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.test.grpc.testRequest,
+                com.test.grpc.TestRequest,
                 com.google.protobuf.Empty>(
                   this, METHODID_TEST)))
+          .addMethod(
+            getTestHttpMethodHelper(),
+            asyncUnaryCall(
+              new MethodHandlers<
+                com.test.grpc.TestRequest,
+                com.test.grpc.TestResponse>(
+                  this, METHODID_TEST_HTTP)))
           .build();
     }
   }
@@ -132,10 +183,18 @@ public final class ProtodemoGrpc {
 
     /**
      */
-    public void test(com.test.grpc.testRequest request,
+    public void test(com.test.grpc.TestRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getTestMethodHelper(), getCallOptions()), request, responseObserver);
+    }
+
+    /**
+     */
+    public void testHttp(com.test.grpc.TestRequest request,
+        io.grpc.stub.StreamObserver<com.test.grpc.TestResponse> responseObserver) {
+      asyncUnaryCall(
+          getChannel().newCall(getTestHttpMethodHelper(), getCallOptions()), request, responseObserver);
     }
   }
 
@@ -159,9 +218,16 @@ public final class ProtodemoGrpc {
 
     /**
      */
-    public com.google.protobuf.Empty test(com.test.grpc.testRequest request) {
+    public com.google.protobuf.Empty test(com.test.grpc.TestRequest request) {
       return blockingUnaryCall(
           getChannel(), getTestMethodHelper(), getCallOptions(), request);
+    }
+
+    /**
+     */
+    public com.test.grpc.TestResponse testHttp(com.test.grpc.TestRequest request) {
+      return blockingUnaryCall(
+          getChannel(), getTestHttpMethodHelper(), getCallOptions(), request);
     }
   }
 
@@ -186,13 +252,22 @@ public final class ProtodemoGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty> test(
-        com.test.grpc.testRequest request) {
+        com.test.grpc.TestRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getTestMethodHelper(), getCallOptions()), request);
+    }
+
+    /**
+     */
+    public com.google.common.util.concurrent.ListenableFuture<com.test.grpc.TestResponse> testHttp(
+        com.test.grpc.TestRequest request) {
+      return futureUnaryCall(
+          getChannel().newCall(getTestHttpMethodHelper(), getCallOptions()), request);
     }
   }
 
   private static final int METHODID_TEST = 0;
+  private static final int METHODID_TEST_HTTP = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -212,8 +287,12 @@ public final class ProtodemoGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_TEST:
-          serviceImpl.test((com.test.grpc.testRequest) request,
+          serviceImpl.test((com.test.grpc.TestRequest) request,
               (io.grpc.stub.StreamObserver<com.google.protobuf.Empty>) responseObserver);
+          break;
+        case METHODID_TEST_HTTP:
+          serviceImpl.testHttp((com.test.grpc.TestRequest) request,
+              (io.grpc.stub.StreamObserver<com.test.grpc.TestResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -277,6 +356,7 @@ public final class ProtodemoGrpc {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new ProtodemoFileDescriptorSupplier())
               .addMethod(getTestMethodHelper())
+              .addMethod(getTestHttpMethodHelper())
               .build();
         }
       }

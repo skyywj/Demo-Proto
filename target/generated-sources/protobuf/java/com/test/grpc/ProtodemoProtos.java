@@ -15,10 +15,15 @@ public final class ProtodemoProtos {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_test_testRequest_descriptor;
+    internal_static_test_TestRequest_descriptor;
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_test_testRequest_fieldAccessorTable;
+      internal_static_test_TestRequest_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_test_TestResponse_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_test_TestResponse_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -30,10 +35,13 @@ public final class ProtodemoProtos {
     java.lang.String[] descriptorData = {
       "\n\017test/test.proto\022\004test\032\033google/protobuf" +
       "/empty.proto\032\034google/api/annotations.pro" +
-      "to\"\031\n\013testRequest\022\n\n\002id\030\001 \001(\0052>\n\tProtode" +
-      "mo\0221\n\004test\022\021.test.testRequest\032\026.google.p" +
-      "rotobuf.EmptyB\"\n\rcom.test.grpcB\017Protodem" +
-      "oProtosP\001b\006proto3"
+      "to\"\031\n\013TestRequest\022\n\n\002id\030\001 \001(\005\"5\n\014TestRes" +
+      "ponse\022\n\n\002id\030\001 \001(\005\022\014\n\004name\030\002 \001(\t\022\013\n\003age\030\003" +
+      " \001(\0052\203\001\n\tProtodemo\0221\n\004test\022\021.test.TestRe" +
+      "quest\032\026.google.protobuf.Empty\022C\n\010testHtt" +
+      "p\022\021.test.TestRequest\032\022.test.TestResponse" +
+      "\"\020\202\323\344\223\002\n\"\005/test:\001*B\"\n\rcom.test.grpcB\017Pro" +
+      "todemoProtosP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -49,12 +57,23 @@ public final class ProtodemoProtos {
           com.google.protobuf.EmptyProto.getDescriptor(),
           com.google.api.AnnotationsProto.getDescriptor(),
         }, assigner);
-    internal_static_test_testRequest_descriptor =
+    internal_static_test_TestRequest_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_test_testRequest_fieldAccessorTable = new
+    internal_static_test_TestRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_test_testRequest_descriptor,
+        internal_static_test_TestRequest_descriptor,
         new java.lang.String[] { "Id", });
+    internal_static_test_TestResponse_descriptor =
+      getDescriptor().getMessageTypes().get(1);
+    internal_static_test_TestResponse_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_test_TestResponse_descriptor,
+        new java.lang.String[] { "Id", "Name", "Age", });
+    com.google.protobuf.ExtensionRegistry registry =
+        com.google.protobuf.ExtensionRegistry.newInstance();
+    registry.add(com.google.api.AnnotationsProto.http);
+    com.google.protobuf.Descriptors.FileDescriptor
+        .internalUpdateFileDescriptor(descriptor, registry);
     com.google.protobuf.EmptyProto.getDescriptor();
     com.google.api.AnnotationsProto.getDescriptor();
   }

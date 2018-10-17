@@ -4,19 +4,21 @@
 package com.test.grpc;
 
 /**
- * Protobuf type {@code test.TestRequest}
+ * Protobuf type {@code test.TestResponse}
  */
-public  final class TestRequest extends
+public  final class TestResponse extends
     com.google.protobuf.GeneratedMessageV3 implements
-    // @@protoc_insertion_point(message_implements:test.TestRequest)
-    TestRequestOrBuilder {
+    // @@protoc_insertion_point(message_implements:test.TestResponse)
+    TestResponseOrBuilder {
 private static final long serialVersionUID = 0L;
-  // Use TestRequest.newBuilder() to construct.
-  private TestRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+  // Use TestResponse.newBuilder() to construct.
+  private TestResponse(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
     super(builder);
   }
-  private TestRequest() {
+  private TestResponse() {
     id_ = 0;
+    name_ = "";
+    age_ = 0;
   }
 
   @java.lang.Override
@@ -24,7 +26,7 @@ private static final long serialVersionUID = 0L;
   getUnknownFields() {
     return this.unknownFields;
   }
-  private TestRequest(
+  private TestResponse(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
@@ -55,6 +57,17 @@ private static final long serialVersionUID = 0L;
             id_ = input.readInt32();
             break;
           }
+          case 18: {
+            java.lang.String s = input.readStringRequireUtf8();
+
+            name_ = s;
+            break;
+          }
+          case 24: {
+
+            age_ = input.readInt32();
+            break;
+          }
         }
       }
     } catch (com.google.protobuf.InvalidProtocolBufferException e) {
@@ -69,14 +82,14 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return com.test.grpc.ProtodemoProtos.internal_static_test_TestRequest_descriptor;
+    return com.test.grpc.ProtodemoProtos.internal_static_test_TestResponse_descriptor;
   }
 
   protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return com.test.grpc.ProtodemoProtos.internal_static_test_TestRequest_fieldAccessorTable
+    return com.test.grpc.ProtodemoProtos.internal_static_test_TestResponse_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            com.test.grpc.TestRequest.class, com.test.grpc.TestRequest.Builder.class);
+            com.test.grpc.TestResponse.class, com.test.grpc.TestResponse.Builder.class);
   }
 
   public static final int ID_FIELD_NUMBER = 1;
@@ -86,6 +99,49 @@ private static final long serialVersionUID = 0L;
    */
   public int getId() {
     return id_;
+  }
+
+  public static final int NAME_FIELD_NUMBER = 2;
+  private volatile java.lang.Object name_;
+  /**
+   * <code>string name = 2;</code>
+   */
+  public java.lang.String getName() {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
+      return (java.lang.String) ref;
+    } else {
+      com.google.protobuf.ByteString bs = 
+          (com.google.protobuf.ByteString) ref;
+      java.lang.String s = bs.toStringUtf8();
+      name_ = s;
+      return s;
+    }
+  }
+  /**
+   * <code>string name = 2;</code>
+   */
+  public com.google.protobuf.ByteString
+      getNameBytes() {
+    java.lang.Object ref = name_;
+    if (ref instanceof java.lang.String) {
+      com.google.protobuf.ByteString b = 
+          com.google.protobuf.ByteString.copyFromUtf8(
+              (java.lang.String) ref);
+      name_ = b;
+      return b;
+    } else {
+      return (com.google.protobuf.ByteString) ref;
+    }
+  }
+
+  public static final int AGE_FIELD_NUMBER = 3;
+  private int age_;
+  /**
+   * <code>int32 age = 3;</code>
+   */
+  public int getAge() {
+    return age_;
   }
 
   private byte memoizedIsInitialized = -1;
@@ -103,6 +159,12 @@ private static final long serialVersionUID = 0L;
     if (id_ != 0) {
       output.writeInt32(1, id_);
     }
+    if (!getNameBytes().isEmpty()) {
+      com.google.protobuf.GeneratedMessageV3.writeString(output, 2, name_);
+    }
+    if (age_ != 0) {
+      output.writeInt32(3, age_);
+    }
     unknownFields.writeTo(output);
   }
 
@@ -115,6 +177,13 @@ private static final long serialVersionUID = 0L;
       size += com.google.protobuf.CodedOutputStream
         .computeInt32Size(1, id_);
     }
+    if (!getNameBytes().isEmpty()) {
+      size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, name_);
+    }
+    if (age_ != 0) {
+      size += com.google.protobuf.CodedOutputStream
+        .computeInt32Size(3, age_);
+    }
     size += unknownFields.getSerializedSize();
     memoizedSize = size;
     return size;
@@ -125,14 +194,18 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof com.test.grpc.TestRequest)) {
+    if (!(obj instanceof com.test.grpc.TestResponse)) {
       return super.equals(obj);
     }
-    com.test.grpc.TestRequest other = (com.test.grpc.TestRequest) obj;
+    com.test.grpc.TestResponse other = (com.test.grpc.TestResponse) obj;
 
     boolean result = true;
     result = result && (getId()
         == other.getId());
+    result = result && getName()
+        .equals(other.getName());
+    result = result && (getAge()
+        == other.getAge());
     result = result && unknownFields.equals(other.unknownFields);
     return result;
   }
@@ -146,74 +219,78 @@ private static final long serialVersionUID = 0L;
     hash = (19 * hash) + getDescriptor().hashCode();
     hash = (37 * hash) + ID_FIELD_NUMBER;
     hash = (53 * hash) + getId();
+    hash = (37 * hash) + NAME_FIELD_NUMBER;
+    hash = (53 * hash) + getName().hashCode();
+    hash = (37 * hash) + AGE_FIELD_NUMBER;
+    hash = (53 * hash) + getAge();
     hash = (29 * hash) + unknownFields.hashCode();
     memoizedHashCode = hash;
     return hash;
   }
 
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.test.grpc.TestRequest parseFrom(byte[] data)
+  public static com.test.grpc.TestResponse parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static com.test.grpc.TestRequest parseFrom(java.io.InputStream input)
+  public static com.test.grpc.TestResponse parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.test.grpc.TestRequest parseDelimitedFrom(java.io.InputStream input)
+  public static com.test.grpc.TestResponse parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static com.test.grpc.TestRequest parseDelimitedFrom(
+  public static com.test.grpc.TestResponse parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static com.test.grpc.TestRequest parseFrom(
+  public static com.test.grpc.TestResponse parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -225,7 +302,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(com.test.grpc.TestRequest prototype) {
+  public static Builder newBuilder(com.test.grpc.TestResponse prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   public Builder toBuilder() {
@@ -240,25 +317,25 @@ private static final long serialVersionUID = 0L;
     return builder;
   }
   /**
-   * Protobuf type {@code test.TestRequest}
+   * Protobuf type {@code test.TestResponse}
    */
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-      // @@protoc_insertion_point(builder_implements:test.TestRequest)
-      com.test.grpc.TestRequestOrBuilder {
+      // @@protoc_insertion_point(builder_implements:test.TestResponse)
+      com.test.grpc.TestResponseOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.test.grpc.ProtodemoProtos.internal_static_test_TestRequest_descriptor;
+      return com.test.grpc.ProtodemoProtos.internal_static_test_TestResponse_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.test.grpc.ProtodemoProtos.internal_static_test_TestRequest_fieldAccessorTable
+      return com.test.grpc.ProtodemoProtos.internal_static_test_TestResponse_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.test.grpc.TestRequest.class, com.test.grpc.TestRequest.Builder.class);
+              com.test.grpc.TestResponse.class, com.test.grpc.TestResponse.Builder.class);
     }
 
-    // Construct using com.test.grpc.TestRequest.newBuilder()
+    // Construct using com.test.grpc.TestResponse.newBuilder()
     private Builder() {
       maybeForceBuilderInitialization();
     }
@@ -277,29 +354,35 @@ private static final long serialVersionUID = 0L;
       super.clear();
       id_ = 0;
 
+      name_ = "";
+
+      age_ = 0;
+
       return this;
     }
 
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return com.test.grpc.ProtodemoProtos.internal_static_test_TestRequest_descriptor;
+      return com.test.grpc.ProtodemoProtos.internal_static_test_TestResponse_descriptor;
     }
 
-    public com.test.grpc.TestRequest getDefaultInstanceForType() {
-      return com.test.grpc.TestRequest.getDefaultInstance();
+    public com.test.grpc.TestResponse getDefaultInstanceForType() {
+      return com.test.grpc.TestResponse.getDefaultInstance();
     }
 
-    public com.test.grpc.TestRequest build() {
-      com.test.grpc.TestRequest result = buildPartial();
+    public com.test.grpc.TestResponse build() {
+      com.test.grpc.TestResponse result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
       return result;
     }
 
-    public com.test.grpc.TestRequest buildPartial() {
-      com.test.grpc.TestRequest result = new com.test.grpc.TestRequest(this);
+    public com.test.grpc.TestResponse buildPartial() {
+      com.test.grpc.TestResponse result = new com.test.grpc.TestResponse(this);
       result.id_ = id_;
+      result.name_ = name_;
+      result.age_ = age_;
       onBuilt();
       return result;
     }
@@ -331,18 +414,25 @@ private static final long serialVersionUID = 0L;
       return (Builder) super.addRepeatedField(field, value);
     }
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof com.test.grpc.TestRequest) {
-        return mergeFrom((com.test.grpc.TestRequest)other);
+      if (other instanceof com.test.grpc.TestResponse) {
+        return mergeFrom((com.test.grpc.TestResponse)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(com.test.grpc.TestRequest other) {
-      if (other == com.test.grpc.TestRequest.getDefaultInstance()) return this;
+    public Builder mergeFrom(com.test.grpc.TestResponse other) {
+      if (other == com.test.grpc.TestResponse.getDefaultInstance()) return this;
       if (other.getId() != 0) {
         setId(other.getId());
+      }
+      if (!other.getName().isEmpty()) {
+        name_ = other.name_;
+        onChanged();
+      }
+      if (other.getAge() != 0) {
+        setAge(other.getAge());
       }
       this.mergeUnknownFields(other.unknownFields);
       onChanged();
@@ -357,11 +447,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      com.test.grpc.TestRequest parsedMessage = null;
+      com.test.grpc.TestResponse parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (com.test.grpc.TestRequest) e.getUnfinishedMessage();
+        parsedMessage = (com.test.grpc.TestResponse) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -396,6 +486,101 @@ private static final long serialVersionUID = 0L;
       onChanged();
       return this;
     }
+
+    private java.lang.Object name_ = "";
+    /**
+     * <code>string name = 2;</code>
+     */
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
+      if (!(ref instanceof java.lang.String)) {
+        com.google.protobuf.ByteString bs =
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        name_ = s;
+        return s;
+      } else {
+        return (java.lang.String) ref;
+      }
+    }
+    /**
+     * <code>string name = 2;</code>
+     */
+    public com.google.protobuf.ByteString
+        getNameBytes() {
+      java.lang.Object ref = name_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        name_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    /**
+     * <code>string name = 2;</code>
+     */
+    public Builder setName(
+        java.lang.String value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  
+      name_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string name = 2;</code>
+     */
+    public Builder clearName() {
+      
+      name_ = getDefaultInstance().getName();
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>string name = 2;</code>
+     */
+    public Builder setNameBytes(
+        com.google.protobuf.ByteString value) {
+      if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+      
+      name_ = value;
+      onChanged();
+      return this;
+    }
+
+    private int age_ ;
+    /**
+     * <code>int32 age = 3;</code>
+     */
+    public int getAge() {
+      return age_;
+    }
+    /**
+     * <code>int32 age = 3;</code>
+     */
+    public Builder setAge(int value) {
+      
+      age_ = value;
+      onChanged();
+      return this;
+    }
+    /**
+     * <code>int32 age = 3;</code>
+     */
+    public Builder clearAge() {
+      
+      age_ = 0;
+      onChanged();
+      return this;
+    }
     public final Builder setUnknownFields(
         final com.google.protobuf.UnknownFieldSet unknownFields) {
       return super.setUnknownFieldsProto3(unknownFields);
@@ -407,39 +592,39 @@ private static final long serialVersionUID = 0L;
     }
 
 
-    // @@protoc_insertion_point(builder_scope:test.TestRequest)
+    // @@protoc_insertion_point(builder_scope:test.TestResponse)
   }
 
-  // @@protoc_insertion_point(class_scope:test.TestRequest)
-  private static final com.test.grpc.TestRequest DEFAULT_INSTANCE;
+  // @@protoc_insertion_point(class_scope:test.TestResponse)
+  private static final com.test.grpc.TestResponse DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new com.test.grpc.TestRequest();
+    DEFAULT_INSTANCE = new com.test.grpc.TestResponse();
   }
 
-  public static com.test.grpc.TestRequest getDefaultInstance() {
+  public static com.test.grpc.TestResponse getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
-  private static final com.google.protobuf.Parser<TestRequest>
-      PARSER = new com.google.protobuf.AbstractParser<TestRequest>() {
-    public TestRequest parsePartialFrom(
+  private static final com.google.protobuf.Parser<TestResponse>
+      PARSER = new com.google.protobuf.AbstractParser<TestResponse>() {
+    public TestResponse parsePartialFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
-      return new TestRequest(input, extensionRegistry);
+      return new TestResponse(input, extensionRegistry);
     }
   };
 
-  public static com.google.protobuf.Parser<TestRequest> parser() {
+  public static com.google.protobuf.Parser<TestResponse> parser() {
     return PARSER;
   }
 
   @java.lang.Override
-  public com.google.protobuf.Parser<TestRequest> getParserForType() {
+  public com.google.protobuf.Parser<TestResponse> getParserForType() {
     return PARSER;
   }
 
-  public com.test.grpc.TestRequest getDefaultInstanceForType() {
+  public com.test.grpc.TestResponse getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

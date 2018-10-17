@@ -10,10 +10,25 @@ option java_outer_classname = "ProtodemoProtos";
 option java_multiple_files = true;
 
 service Protodemo {
-    rpc test(testRequest) returns (google.protobuf.Empty);
+
+    rpc test(TestRequest) returns (google.protobuf.Empty);
+
+    rpc testHttp(TestRequest) returns (TestResponse){
+        //添加http相关url
+        option (google.api.http) = {
+            post: "/test"
+            body: "*"
+        };
+    }
 }
 
-message testRequest{
+message TestRequest{
     int32 id = 1;
+}
+
+message TestResponse{
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
 }
 
